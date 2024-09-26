@@ -13,7 +13,7 @@ export default function Home() {
         <div className="bg-red-300">
         hi
         </div>
-        <div className="bg-slate-200">
+        <div className="bg-slate-200 ">
         hi
         </div>
         </MaxWidthWrapper>
