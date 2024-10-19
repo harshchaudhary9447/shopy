@@ -1,5 +1,6 @@
 import MaxWidthWrapper from "@/components/MaxWidthWrapper";
 import Phone from "@/components/Phone";
+import { Reviews } from "@/components/Reviews";
 import { Check, Star } from "lucide-react";
 
 
@@ -92,12 +93,72 @@ export default function Home() {
           <MaxWidthWrapper className="flex flex-col items-center gap-16 sm:gap-32">
             <div className="flex flex-col lg:flex-row items-center gap-4 sm:gap-6">
               <h2 className="order-1  mt-2 tracking-tight text-center text-balance !leading-tight font-bold text-5xl md:text-6xl text-gray-900">
-                What our cus tomers say
+                What our <span className="relative px-2 bg-green-500 text-white">customers</span> say
               </h2>
+              <img src="/snake-2.png" className="w-24 order-0 "></img>
             </div>
-          </MaxWidthWrapper>
+
+            <div className="mx-auto grid max-w-2xl grid-cols-1 px-4 lg:mx-0 lg:max-w-none lg:grid-cols-2 gap-y-16">
+              <div className="flex flex-auto flex-col gap-4 lg:pr-8 xl:pr-20">
+
+                <div className="flex gap-0.5 mb-2 ">
+                   <Star className="h-5 w-5 text-green-600 fill-green-600"></Star> 
+                   <Star className="h-5 w-5 text-green-600 fill-green-600"></Star> 
+                   <Star className="h-5 w-5 text-green-600 fill-green-600"></Star> 
+                   <Star className="h-5 w-5 text-green-600 fill-green-600"></Star> 
+                </div>
+
+                <div className="text-lg leading-8">
+                  <p>
+                    "The case feels durable and I even got a compliment on the design
+                    Had the case for two and a half months now and <span className="p-0.5 bg-slate-800 text-white">The image is super clear</span>"
+                  </p>
+                </div>
+              <img className="rounded-full h-12 w-12 object-cover" src="/users/user-1.png"></img>  
+
+              <div className="flex flex-col">
+              <p className="font-semibold">Harsh Chaudhary</p>
+              <div className="flex gap-1.5 items-center text-zinc-600">
+                <Check className="h-4 w-4 stroke-[3px] text-green-600"/>
+                <p className="text-sm">Verified Purchase</p>
+              </div>
+              </div>
+
+              </div>
+
+              <div className="flex flex-auto flex-col gap-4 lg:pr-8 xl:pr-20">
+
+                <div className="flex gap-0.5 mb-2 ">
+                   <Star className="h-5 w-5 text-green-600 fill-green-600"></Star> 
+                   <Star className="h-5 w-5 text-green-600 fill-green-600"></Star> 
+                   <Star className="h-5 w-5 text-green-600 fill-green-600"></Star> 
+                   <Star className="h-5 w-5 text-green-600 fill-green-600"></Star> 
+                </div>
+
+                <div className="text-lg leading-8">
+                  <p>
+                    "The case feels durable and I even got a compliment on the design
+                    Had the case for two and a half months now and <span className="p-0.5 bg-slate-800 text-white">The image is super clear</span>"
+                  </p>
+                </div>
+
+                <img className="rounded-full h-12 w-12 object-cover" src="/users/user-4.jpg"></img> 
+                <div className="flex flex-col">
+              <p className="font-semibold">Rohit Chaudhary</p>
+              <div className="flex gap-1.5 items-center text-zinc-600">
+                <Check className="h-4 w-4 stroke-[3px] text-green-600"/>
+                <p className="text-sm">Verified Purchase</p>
+              </div>
+              </div>
+              </div>
+
+            </div>
+          </MaxWidthWrapper> 
         </section>
 
+        <div className="pt-16 bg-slate-100">
+          <Reviews/>
+        </div>
       </div>
   );
 }
