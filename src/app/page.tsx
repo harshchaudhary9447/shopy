@@ -209,7 +209,7 @@ export default function Home() {
               <Link className={buttonVariants({
                 size:'lg',
                 className:"mx-auto mt-8 bg-[#008000]"
-              })} href="/configue/upload"> Create your case now <ArrowRight className="h-4 w-4 text-green-400 ml-1.5"/></Link>
+              })} href='/configure/upload'> Create your case now <ArrowRight className="h-4 w-4 text-green-400 ml-1.5"/></Link>
             </div>
            </ul>
             </MaxWidthWrapper>
